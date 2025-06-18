@@ -6,7 +6,9 @@ import {
   BannerBox2,
   BannerWrapper,
   StyledImage,
-} from "../../styles/bannerSection";
+} from "../../../styles/bannerSection";
+import Form from "../rentForm";
+import CarCard from "../carCard/CarCard";
 
 export default function BannerSection() {
   return (
@@ -22,7 +24,7 @@ export default function BannerSection() {
               price.
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box>
             <StyledImage src="/img/onix.webp" />
           </Box>
         </BannerBox1>
@@ -35,12 +37,14 @@ export default function BannerSection() {
               Providing cheap car rental services and safe and comfortable
               facilities.
             </Typography>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Box>
               <StyledImage src="/img/cobalt.webp" />
             </Box>
           </Box>
         </BannerBox2>
       </BannerWrapper>
+      <Form />
+      <CarCard />
     </Container>
   );
 }
